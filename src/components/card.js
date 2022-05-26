@@ -22,9 +22,12 @@ import {
 } from "./data";
 
 import {
-  userDataFromServer,
-  api
+  userDataFromServer
 } from "./index";
+
+import {
+  api
+} from "./api";
 
 let cardForDelete = null;
 
