@@ -124,9 +124,9 @@
       <button type="button" class="popup__close button-style" aria-label="Закрыть меню">
         <img class="popup__close-image" src="<%=require('./images/Close-Icon.svg')%>" alt="Закрыть меню" />
       </button>
-      <form name="confirm-form" class="popup__form" action="#" method="get" novalidate>
+      <form name="confirm-form" class="popup__form" novalidate>
         <h2 class="popup__form-title">Вы уверены?</h2>
-        <button type="submit" class="popup__submit popup__submit_confirm" aria-label="Да">
+        <button type="button" class="popup__submit popup__submit_confirm" id="confirmDeleteButton" aria-label="Да">
           Да
         </button>
       </form>
@@ -150,3 +150,4 @@
 </body>
 
 </html>
+

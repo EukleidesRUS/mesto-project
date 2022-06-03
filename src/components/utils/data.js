@@ -52,7 +52,7 @@ const changeAvatarPopup = document.querySelector("#changeAvatarPopup");
 //Форма изменения фото аватара
 const formChangeAvatar = changeAvatarPopup.querySelector(".popup__form");
 //Поле ввода ссылки на картинку аватара
-const linkAvatarInput = document.querySelector("#avatar-link");
+const linkAvatarInput = changeAvatarPopup.querySelector("#avatar-link");
 //Кнопка сабмита формы изменения аватара
 const changeAvatarSubmit = changeAvatarPopup.querySelector(".popup__submit");
 
@@ -66,6 +66,14 @@ const popupImageCaption = openImage.querySelector(".popup__image-caption");
 
 //Секция в которую вставляем карточки
 const placesElements = pageContent.querySelector(".elements");
+const settings = {
+  inputErrorClass: "popup__input_type_error",
+  errorClass: "popup__input-error_active",
+  inactiveButtonClass: "popup__submit_disabled",
+  formSelector: ".popup__form",
+  inputSelector: ".popup__input",
+  submitButtonSelector: ".popup__submit",
+};
 
 export {
   pageContent,
@@ -100,4 +108,5 @@ export {
   confirmForm,
   profileSubmitButton,
   popupCloseButton,
+  settings,
 };
